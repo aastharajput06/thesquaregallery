@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Navbar from './Navbar';
+import Landingpage from './Landingpage';
 import './App.css';
+import './landingpage.css';
+
+
+// import { render } from '@testing-library/react';
+
+
+
+
+
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+      <div className="App">
+        {/* <register /> */}
+        {/* <h1 > landiFFFngpage</h1> */}
+        <p>hwllo there iam typing with only one hand and fast</p>
+        <Navbar />
+        <Landingpage />
+
+      </div>
+
+    );
+  }
+
 
 export default App;
