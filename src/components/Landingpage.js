@@ -1,5 +1,4 @@
 import React from 'react';
-//import './landingpage.css';
 
 
 class loading extends React.Component {
@@ -7,7 +6,11 @@ class loading extends React.Component {
     render() {
         return (
             <div>
-                <h1>The Square Gallery</h1>
+
+            
+                <div class="text-xl font-medium text-black">ChitChat</div>
+                <p class="text-gray-500">You have a new message!</p>
+               
 
             </div>
         );
