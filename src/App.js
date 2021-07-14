@@ -1,7 +1,9 @@
-import React  from 'react';
+import React, {useState} from 'react';
 import Navbar from './components/Navbar';
 import Landingpage from './components/Landingpage';
 import './index.css';
+import Search from './components/Search';
+import Upload from './components/Upload';
 
 
 // import { render } from '@testing-library/react';
@@ -12,11 +14,30 @@ function clickMe(){
   alert(" Thankyou for Registering!!");
 }
 
+const pictures= [
+  { id: '1', name: 'Animal' },
+  { id: '2', name: 'Food' },
+  { id: '3', name: 'Nature' },
+  { id: '4', name: 'Aesthetic' },
+];
+
 
 
 function App() {
     return (
       <>
+       <Search/>
+       <Upload/>
+      
+        <div>
+          <ul>
+                {pictures.map((pictures) => (
+                    <li key={pictures.id}>{pictures.name}</li>
+                ))}
+       </ul>
+ 
+           </div> 
+          
         <div>
            <button class="bg-green-300 hover:bg-green-200 text-white font-bold py-2 px-4 rounded">
             Create Account/Log In
